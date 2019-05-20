@@ -15,7 +15,7 @@ ActiveRecord::Schema.define(version: 20180502101418) do
   create_table "pokemons", force: :cascade do |t|
     t.string "species"
     t.string "nickname"
-    t.integer "trainer_id", null: false
+    t.integer "trainer_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["trainer_id"], name: "index_pokemons_on_trainer_id"
